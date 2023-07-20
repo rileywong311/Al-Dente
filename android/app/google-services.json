@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1067475332172",
+    "project_id": "cook1ng",
+    "storage_bucket": "cook1ng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067475332172:android:75ed15832eb17a5845d8e9",
+        "android_client_info": {
+          "package_name": "com.example.al_dente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067475332172-3gofq7vpcl9mu2kd3rtnk1bvf298nngq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChkS20TNkbT6XzVEa3UqGWBj8mMR4JeHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067475332172-3gofq7vpcl9mu2kd3rtnk1bvf298nngq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
