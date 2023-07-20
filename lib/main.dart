@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'pages/login_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const loginScreen(),
     );
   }
 }
@@ -45,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
     testDB.get().then((querySnapshot) {
       List<String> newTest = [];
       List<DocumentSnapshot> docs = querySnapshot.docs;
-      for(DocumentSnapshot doc in docs) {
+      for (DocumentSnapshot doc in docs) {
         newTest.add(doc.get('text'));
       }
       setState(() {
@@ -62,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    if(test.length == 0) {
+    if (test.length == 0) {
       parseTestDB();
     }
     return Scaffold(
